@@ -116,9 +116,9 @@
 
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-<script src="https://x.spiget.org/js/jquery.autocomplete.js?1"></script>
+<script src="https://x.spiget.org/js/jquery.autocomplete.min.js"></script>
 <script src="https://spiget.org/js/bootstrap.min.js"></script>
-<script src="https://x.spiget.org/js/shortener.js?2"></script>
+<script src="https://x.spiget.org/js/shortener.min.js"></script>
 
 </body>
 </html>

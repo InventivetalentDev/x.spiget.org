@@ -50,6 +50,6 @@ if (count($split) > 1) {
 
     console.log(queries);
 </script>
-<script src="https://x.spiget.org/js/redirect.js?1"></script>
+<script src="https://x.spiget.org/js/redirect.min.js"></script>
 </body>
 </html>
