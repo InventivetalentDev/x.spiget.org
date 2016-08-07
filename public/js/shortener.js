@@ -13,7 +13,7 @@ $(document).ready(function () {
 
             console.log("Searching " + Shortener.type + "/" + $value);
             $.ajax({
-                url: "https://api.spiget.org/v2/search/" + Shortener.type + "/" + $value + "?callback=?",
+                url: "https://api.spiget.org/v2/search/" + Shortener.type + "/" + $value + "?spiget__ua=SpigetShortener&callback=?",
                 dataType: "jsonp",
                 success: function (s) {
                     if (!("error" in s)) {
