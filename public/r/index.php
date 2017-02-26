@@ -3,6 +3,10 @@ include("../../internal/getjson.php");
 
 $query = $_GET["q"];
 
+if (empty($query)) {
+    header("Location: https://x.spiget.org");
+}
+
 $split = preg_split("/[\\/]+/", $query);
 $names = $split;
 foreach ($names as &$name) {// Convert IDs to names
