@@ -7,6 +7,7 @@
     <!-- OG -->
     <meta property="og:title" content="URL Shortener | Spiget">
     <meta property="og:site_name" content="URL Shortener">
+    <meta property="og:image" content="https://spiget.org/img/logo-text-centered-616x630.png">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://x.spiget.org">
 
