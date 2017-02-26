@@ -28,6 +28,7 @@ if (count($split) > 1) {
     <!-- OG -->
     <meta property="og:title" content="<?php echo $title; ?> | Spiget Author">
     <meta property="og:site_name" content="<?php echo $title; ?>">
+    <meta property="og:image" content="<?php echo "https://api.spiget.org/v2/authors/" . $names[0] . "/avatar"; ?>">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://x.spiget.org">
 

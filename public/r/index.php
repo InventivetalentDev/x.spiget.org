@@ -35,6 +35,7 @@ if (count($split) > 1) {
     <!-- OG -->
     <meta property="og:title" content="<?php echo $title; ?> | Spiget Resource">
     <meta property="og:site_name" content="<?php echo $title; ?>">
+    <meta property="og:image" content="<?php echo "https://api.spiget.org/v2/resources/" . $names[0] . "/icon"; ?>">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://x.spiget.org">
 
