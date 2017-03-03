@@ -9,12 +9,13 @@ if (empty($query)) {
 
 $split = preg_split("/[\\/]+/", $query);
 $names = $split;
+$ids = array();
+$i = 0;
 foreach ($names as &$name) {// Convert IDs to names
-    if (is_numeric($name)) {
-        $json = getJson("http://api.spiget.org/v2/resources/$name");
-        if ($json !== false) {
-            $name = $json["name"];
-        }
+    $json = getJson("http://api.spiget.org/v2/resources/$name");
+    if ($json !== false) {
+        $name = $json["name"];
+        $ids[] = $json["id"];
     }
 }
 $title = $names[0];
@@ -39,7 +40,7 @@ if (count($split) > 1) {
     <!-- OG -->
     <meta property="og:title" content="<?php echo $title; ?> | Spiget Resource">
     <meta property="og:site_name" content="<?php echo $title; ?>">
-    <meta property="og:image" content="<?php echo "https://api.spiget.org/v2/resources/" . $names[0] . "/icon"; ?>">
+    <meta property="og:image" content="<?php echo "https://api.spiget.org/v2/resources/" . $ids[0] . "/icon"; ?>">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://x.spiget.org">
 
